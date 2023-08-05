@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="font-mono">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+/>
+ 
+<!-- script -->
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+    <style>
+       
+/* NOTE: I only tested this on Google Chrome.*/
+
+body{
+  background: forestgreen;
+}
+
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container h1:nth-child(1) {
+  color: #355c7d;
+  font-family: 'Fira Code', monospace;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 0 0 0 35%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 220px;
+  animation: type 2s steps(40,end) forwards;
+}
+
+.container h1:nth-child(2) {
+  opacity: 0;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  background: linear-gradient(to right, #f895acfe, #74f672, #6cc09c);
+  font-weight: 800;
+  font-size: 70px;  
+  width: 430px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+}
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%, 99%{
+    border-right: 1px solid orange;
+  }
+  100%{
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <!--navbar -->
+    
+
+    <nav class="bg-white dark:bg-gradient-to-r from-emerald-400 to-pink-500 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="" class="flex items-center">
+            <img src="Lifesavers - Using Computer.png" class="h-14 mr-3" alt="">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Roy's Realm</span>
+        </a>
+        <div class="flex md:order-2">
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-2" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 md: md:dark: dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-100 md:p-0 md:dark:text-blue-500" aria-current="page">HOME</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ABOUT</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SERVICES</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT</a>
+            </li>
+            <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-100 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CHAT WITH ME</a>
+              </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+      <!--hero section-->
+      <div class="hero  min-w-fit min-h-screen bg-base-200 bg-white dark:bg-gradient-to-r from-sky-400 to-pink-300 ">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="rainbow">
+                <img src="qqq.png" class="max-w-md rounded-lg " />
+            </div>
+        
+          <div class = "container">
+            <h1 class="text-lg">Hi, my name is</h1>
+            <h1> RESHIK ROY. </h1>
+           <!--drawer-->
+           <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                Explore More
+            </span>
+          </button>
+
+ 
+          </div>
+        </div>
+      </div>
+      
+  
+
+    
+
+  
+  
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
